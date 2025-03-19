@@ -1,0 +1,71 @@
+/* 기본 바디 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 메인 컨테이너 */
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Start 버튼 스타일 */
+  #startButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* 포스터와 상세 정보 영역을 가로로 배치 */
+  .movie-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* 포스터 영역(기본 배경) */
+  .poster {
+    width: 200px;
+    height: 300px;
+    background-color: gray;
+  }
+  
+  /* 상세 정보 텍스트 */
+  .details {
+    margin-left: 20px;
+    text-align: left;
+  }
+  
+  /* 유사 영화 목록: 가로로 나열, 간격 */
+  .similar-movies {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* 유사 영화 카드 스타일 (간단 예시) */
+  .similar-movies div {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  /* 반응형 예시: 화면이 좁아지면 세로 배치로 전환 */
+  @media (max-width: 768px) {
+    .movie-info {
+      flex-direction: column;
+      align-items: center;
+    }
+    .details {
+      margin-left: 0;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  
